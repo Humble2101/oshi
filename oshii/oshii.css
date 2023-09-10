@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0%;
+}
+main{
+background-image: url(oshii-image/oshiibackground.jpg);
+background-size: cover;
+height: 75vh;
+}
+header{
+background-color: transparent;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.headerdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95vw;
+    position: relative;
+    left: 2em;
+}
+.menu-bar{
+    width: 13vw;
+}
+.menu-bar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+.dropdown-menu{
+    display: none;
+}
+.menu-bar ul li{
+    position: relative;
+}
+.menu-bar ul li a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.menu-bar ul li a:hover{
+    color: aqua;
+}
+.menu-bar ul li:hover .dropdown-menu{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 9vw;
+    background-color: black;
+}
+.dropdown-menu ul{
+    display: block;
+}
+.OISHII{
+    font-size: 35px;
+}
